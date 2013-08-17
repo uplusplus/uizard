@@ -1,0 +1,10 @@
+{".yui-skin-sam":{"background-image":"url(theme/mac/image/top.png)","background-repeat":"repeat-x","background-color":"#a7a7a7"},
+".yui-skin-sam .yuimenubaritemlabel":{"color":"black"},
+".mainToolbar .toolbarPart":{"border-color":"gray"},
+"#workspaceWindowList .yui-nav":{"border-bottom-color":"#cccccc"},
+"#workspace":{"background-color":"white"},
+"#projectExplorer":{"background-color":"#dadfe5"},
+".yui-nav":{"background-color":"#ececec"},
+".yui-skin-sam .yui-navset .yui-content":{"background-color":"#dadfe5"},
+"#uizardStatusbarMessage":{"color":"white"},
+"#yui-gen15":{"background-color":"#a7a7a7"}}

@@ -1,0 +1,19 @@
+[{
+	"fileExtention":"html",
+	"editor":"Editor",
+	"description":"This is HTML.",
+	"type":"Code"
+},
+{
+	"fileExtention":"uml",
+	"editor":"Designer",
+	"description":"This is UML.",
+	"type":"Graphic"
+},
+{
+	"fileExtention":"ui",
+	"editor":"Designer",
+	"description":"This is UI.",
+	"type":"Graphic"
+}
+]

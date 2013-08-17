@@ -1,0 +1,51 @@
+<div id="projectNew" style="text-align:left; font-size:11px;">
+	<div class="wizardStep" step="1">
+		<div class="projectTypes" style="float:left; width:180px; height:300px; border:1px solid #999; background-color:#fff; overflow:auto;"></div>
+        <div style="float:right; width:390px; height:300px; border:1px solid #999;">
+            <div class="projectItems" style="width:100%; height:200px; border-bottom:1px solid #999; background-color:#fff; text-align:center; overflow:auto; line-height:12px;"></div>
+            <div class="projectDescription" style="width:100%; height:99px; padding:10px;">
+            	Project Description<br/><textarea id="textProjectDescription" style="width:358px; height:47px; padding:5px;" draggable="false" readonly></textarea>
+            	<input type="hidden" id="inputProjectType">
+            	<input type="hidden" id="inputProjectDetailedType">
+            </div>
+        </div>    
+    </div>
+	<div class="wizardStep" step="2" style="display:none;">
+		<div style="float:left; width:538px; height:260px; border:1px solid #999; overflow:auto; padding:20px;">
+			<div style="margin:0 10px 0 10px;">
+				Make New project : 
+		        <select id="inputProjectSource">
+		        	<option value='' selected="selected">--- select ---</option>
+		            <option value='Local'>Local</option>
+		            <option value='SVN'>SVN</option>
+		            <option value='Git'>Git</option>
+		        </select>
+			</div>
+			<div id="projectNewSVNProperties" style="padding:10px; border:1px solid #999; display:none;">
+				<table>
+					<tr>
+						<td style="width:100px;">SVN URL</td>
+						<td><input type="text" id="inputProjectSVNURL" style="width:300px;"></td>
+					</tr>
+					<tr>
+						<td>SVN ID</td>
+						<td><input type="text" id="inputProjectSVNID" style="width:300px;"></td>
+					</tr>
+					<tr>
+						<td>SVN PW</td>
+						<td><input type="text" id="inputProjectSVNPW" style="width:300px;"></td>
+					</tr>					
+				</table>
+			</div>
+			<div class="projectAuthor" style="margin:0 10px 10px 10px;">
+				Project Author<br/><input type="text" id="inputProjectAuthor" style="width:400px;">
+			</div>
+			<div class="projectName" style="margin:0 10px 10px 10px;">
+				Project Name<br/><input type="text" id="inputProjectName" style="width:400px;">
+			</div>
+			<div class="projectAbout" style="margin:0 10px 10px 10px;">
+				Project About<br/><textarea id='inputProjectAbout' style='width:400px; height:47px; padding:5px;' draggable='false'></textarea>
+			</div>
+		</div>
+    </div>
+</div>

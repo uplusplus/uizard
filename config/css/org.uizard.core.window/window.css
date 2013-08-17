@@ -1,0 +1,107 @@
+/*
+Copyright Sung-tae Ryu. All rights reserved.
+Code licensed under the GPL v2 License:
+http://www.uizard.org/License
+version: 3.0.0
+*/
+
+#workspaceWindowList {
+	background-color: #999;
+	z-index:4;
+}
+
+#workspaceWindowList .yui-nav {
+	height: 20px;
+	border-bottom: 1px solid #777;
+}
+
+#workspaceWindowList .yui-navset .yui-nav a em, .yui-skin-sam .yui-navset .yui-navset-top .yui-nav a em {
+	border:0px solid #FFF;
+	padding-top:3px;
+	padding-bottom:2px;	
+	padding-left:6px;
+	padding-right:6px;
+	position:relative;
+}
+
+#workspaceWindowList .button {
+	margin-left:5px;
+}
+
+#workspace .yui-panel .hd {
+	font-size: 11px;
+}
+
+#workspace .yui-panel .activated {
+	background:none;
+	background-color: #B3D4FF;	
+	background-image:url(../../image/org.uizard.core.window/activeTitlebar.png);
+	background-repeat:repeat-x;
+	background-position:inherit;
+	color:white;
+}
+
+#workspace .yui-panel .bd {
+	background-color: #fafafa;
+	border-top: 1px solid #666;
+	padding: 0px;
+}
+
+#workspace .yui-panel .ft {
+	font-size: 11px;
+	background-color: #eee;
+	padding: 3px 6px;
+	height: 17px;
+}
+
+#workspace .yui-resize-handle-inner-t {
+	background-image: none;
+}
+
+#workspace .yui-resize-handle-inner-l {
+	background-image: none;
+}
+
+#workspace .yui-resize-handle-inner-r {
+	background-image: none;
+}
+
+#workspace .yui-resize-handle-inner-b {
+	background-image: none;
+}
+
+#workspace .yui-resize-handle-t {
+	top: 1px;
+}
+
+#workspace .yui-resize-handle-b {
+	bottom: 1px;
+}
+
+#workspace .yui-resize-handle-r {
+	right: 1px;
+}
+
+#workspace .yui-resize-handle-l {
+	left: 1px;
+}
+
+#workspace .yui-resize-handle-bl {
+	left: 1px;
+	bottom: 1px;	
+}
+
+#workspace .yui-resize-handle-br {
+	right: 1px;
+	bottom: 1px;
+}
+
+#workspace .yui-resize-handle-tl {
+	top: 1px;
+	left: 1px;
+}
+
+#workspace .yui-resize-handle-tr {
+	right: 1px;
+	top: 1px;
+}

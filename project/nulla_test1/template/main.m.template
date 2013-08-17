@@ -1,0 +1,17 @@
+//
+//  main.m
+//  Default
+//
+//  Created by UIzard on 10. 10. 22..
+//  Copyright 2010 thinksquare. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+int main(int argc, char *argv[]) {
+    
+    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+    int retVal = UIApplicationMain(argc, argv, nil, @"DefaultAppDelegate");
+    [pool release];
+    return retVal;
+}

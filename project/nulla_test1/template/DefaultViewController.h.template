@@ -1,0 +1,17 @@
+//
+//  DefaultViewController.h
+//  Default
+//
+//  Created by UIzard on 10. 10. 22..
+//  Copyright 2010 thinksquare. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+[{!AddImport!}]
+
+
+@interface DefaultViewController : UIViewController [{!AddDelegate!}] {
+
+}
+
+@end

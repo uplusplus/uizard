@@ -1,0 +1,146 @@
+/* Button */
+.androidButtonImageTable {
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+
+.androidButtonImageTable .ltCell {
+	width:5px;
+	height:5px;
+	background-image:url('images/button/lt_button.png');
+	background-repeat:no-repeat;
+}
+
+.androidButtonImageTable .tCell {
+	background-image:url('images/button/t_button.png');
+	background-repeat:repeat-x;
+}
+
+.androidButtonImageTable .rtCell {
+	width:5px; 
+	height:5px; 
+	background-image:url('images/button/rt_button.png');
+	background-repeat:no-repeat;	
+}
+
+.androidButtonImageTable .lCell {
+	width:5px;
+	background-image:url('images/button/l_button.png');
+	background-repeat:repeat-y;
+}
+
+.androidButtonImageTable .cCell {
+	background-color:#ccc;
+	overflow:hidden;
+	text-align: center;
+}
+
+.androidButtonImageTable .cCell .class_name{
+	background-color:#ccc;
+	overflow:auto;
+	text-align: center;
+}
+
+.androidButtonImageTable .rCell {
+	width:5px;
+	background-image:url('images/button/r_button.png');
+	background-repeat:repeat-y;
+}
+
+.androidButtonImageTable .lbCell {
+	width:5px;
+	height:5px; 
+	background-image:url('images/button/lb_button.png'); 
+	background-repeat:no-repeat;	
+}
+
+.androidButtonImageTable .bCell {
+	background-image:url('images/button/b_button.png'); 
+	background-repeat:repeat-x;
+}
+
+.androidButtonImageTable .rbCell {
+	width:5px; 
+	height:5px; 
+	background-image:url('images/button/rb_button.png'); 
+	background-repeat:no-repeat;
+}
+
+/* Check Box */
+.androidCheckBox {
+	height:100%; 
+	width:100%;
+	margin:0 auto;
+}
+
+.androidCheckBox .checkButton{
+	height:100%;
+	width:100%;
+	background-image:url('images/checkBox/checkBox.png'); 
+	background-repeat:no-repeat; 
+	background-size:100%;
+}
+
+.androidCheckBox .checkLabel{
+	overflow:visible; 
+	width:100%;
+	text-align:left; 
+	padding:5px;
+	font-weight: bold;
+}
+
+/* Radio Box */
+.androidRadioBox {
+	height:100%; 
+	width:100%;
+	margin:0 auto; 
+}
+
+.androidRadioBox .radioButton{
+	height:100%;
+	width:100%;
+	background-image:url('images/radioButton/radioButton.png');
+	background-repeat:no-repeat; 
+	background-size:100%;
+}
+
+.androidRadioBox .radioLabel{
+	overflow:visible; 
+	width:100%;
+	text-align:left; 
+	padding:5px;
+	font-weight: bold;
+}
+
+/* Label */
+.androidLabel {
+	height:100%; 
+	width:100%;
+	background-color:white;
+	border:1px solid #ccc;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	line-height: 12px;
+	font-size: 11px;
+		
+
+}
+
+.androidLabel .textbox {
+	text-align: center;
+   	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

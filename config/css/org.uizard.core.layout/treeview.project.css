@@ -1,0 +1,160 @@
+/*
+Copyright Sung-tae Ryu. All rights reserved.
+Code licensed under the GPL v2 License:
+http://www.uizard.org/License
+version: 3.0.0
+*/
+
+/**************************************************************************
+PROJECT TREE STYLE CUSTOMIZATION
+**************************************************************************/
+.projectName {
+	font-size: 11px; 
+	margin:3px;
+}
+
+.directoryIcon {
+	margin-top:-5px;
+	margin-left:-1px;
+}
+
+#projectExplorer .directoryIcon {
+	margin-right:5px;
+	margin-top: 1px;
+	vertical-align:middle;
+}
+
+.ygtvhtml {
+	font-size:11px;
+}
+
+/* space */
+#projectExplorer .ygtspacer { 
+	width:17px; 
+	height:22px; 
+}
+
+/* first or middle sibling, no children */
+#projectExplorer .ygtvtn { 
+	background: url(../../image/org.uizard.core.layout/fileButton.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px; 
+}
+
+/* first or middle sibling, collapsable */
+#projectExplorer .ygtvtm { 
+	background: url(../../image/org.uizard.core.layout/openFolder.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px; 
+	cursor:pointer; 
+}
+
+/* first or middle sibling, collapsable, hover */
+#projectExplorer .ygtvtmh { 
+	background: url(../../image/org.uizard.core.layout/openFolder.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px; 
+	cursor:pointer; 
+}
+
+/* first or middle sibling, expandable */
+#projectExplorer .ygtvtp { 
+	background: url(../../image/org.uizard.core.layout/closedFolder.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px; 
+	cursor:pointer; 
+}
+
+/* first or middle sibling, expandable, hover */
+#projectExplorer .ygtvtph { 
+	background: url(../../image/org.uizard.core.layout/closedFolder.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px; 
+	cursor:pointer; 
+}
+
+/* last sibling, no children */
+#projectExplorer .ygtvln { 
+	background: url(../../image/org.uizard.core.layout/fileButtonLast.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px; 
+}
+
+/* Last sibling, collapsable */
+#projectExplorer .ygtvlm { 
+	background: url(../../image/org.uizard.core.layout/openFolderLast.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px; 
+	cursor:pointer; 
+}
+
+/* Last sibling, collapsable, hover */
+#projectExplorer .ygtvlmh { 
+	background: url(../../image/org.uizard.core.layout/openFolderLast.gif) 0 0 no-repeat; 
+	width:17px;
+	height:22px; 
+	cursor:pointer; 
+}
+
+/* Last sibling, expandable */
+#projectExplorer .ygtvlp { 
+	background: url(../../image/org.uizard.core.layout/closedFolderLast.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px; 
+	cursor:pointer; 
+}
+
+/* Last sibling, expandable, hover */
+#projectExplorer .ygtvlph { 
+	background: url(../../image/org.uizard.core.layout/closedFolderLast.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px; 
+	cursor:pointer; 
+}
+
+/* Loading icon */
+#projectExplorer .ygtvloading { 
+	background:  url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/loading.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px;
+}
+
+/* the style for the empty cells that are used for rendering the depth 
+ * of the node */
+#projectExplorer .ygtvdepthcell { 
+	background: url(http://developer.yahoo.com/yui/examples/treeview/assets/img/folders/vline.gif) 0 0 no-repeat; 
+	width:17px; 
+	height:22px; 
+}
+
+#projectExplorer .ygtvblankdepthcell { 
+	width:17px; 
+	height:22px; 
+}
+
+/* the style of the div around each node */
+#projectExplorer .ygtvitem { }  
+
+#projectExplorer .ygtvitem  table{
+    margin-bottom:0;
+}
+#projectExplorer .ygtvitem  td {
+    border:none;
+    padding:0;
+} 
+
+#projectExplorer .ygtvfocus { 
+	background-color:#B3D4FF;
+}
+
+/* the style of the div around each node's collection of children */
+#projectExplorer .ygtvchildren { }  
+* html .ygtvchildren { 
+	height:1%;
+}  
+
+/* the style of the text label in ygTextNode */
+#projectExplorer .ygtvlabel, .ygtvlabel:link, .ygtvlabel:visited, .ygtvlabel:hover { 
+	margin-left:2px;
+	text-decoration: none;
+}

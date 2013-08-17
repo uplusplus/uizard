@@ -1,0 +1,23 @@
+{
+	"top":{
+		".yui-skin-sam":{"background-color":"#F8F8F8","background-image":"none"},
+		".yui-skin-sam .yuimenubaritemlabel":{"color":"black"},
+		".mainToolbar .toolbarPart":{"border-color":"#DDDDDD"}
+	},
+	
+	"workspace":{
+		"#workspaceWindowList .yui-nav":{"border-bottom-color":"#999999"},
+		"#workspace":{"background-color":"#777777"}
+	},
+	
+	"ProjectExplorer":{
+		"#projectExplorer":{"background-color":"#FFFFFF"},
+		".yui-nav":{"background-color":"transparent"},
+		".yui-skin-sam .yui-navset .yui-content":{"background-color":"#FFFFFF"}
+	},
+	
+	"bottom":{
+		"#uizardStatusbarMessage":{"color":"black"},
+		"#yui-gen15":{"background-color":"transparent"}
+	}
+}

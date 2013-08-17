@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tree>
+	<root label="preference" expanded="true">
+		<item label="System">
+			<tab label="Basic" src="config/dialog/org.uizard.core.preference/basic.html">
+				<preference name="testvar1"  default="testvar1"/>
+			</tab>
+			<tab label="Basic2" src="config/dialog/org.uizard.core.preference/basic2.html">
+				<preference name="testvar2" default="testvar2"/>
+			</tab>
+		</item>
+		<item label="Debug">
+			<tab label="General" src="config/dialog/org.uizard.core.preference/basic2.html"/>
+			<tab label="Android"/>
+			<tab label="IOS"/>
+		</item>
+	</root>
+	<root label="Theme" src="theme/theme.html"></root>
+	<root label="File_Types" src="config/preference/filetypes.html"></root>
+	<root label="Plugin" src="module/org.uizard.plugin/plugin.preference.html"></root>
+</tree>

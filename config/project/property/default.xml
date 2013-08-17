@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TREE>
+	<ROOT label="Property" expanded="true">
+		<ITEM label="Resource">
+			<TAB label="General"  active="true" url="config/dialog/org.uizard.core.project/project.general.html">
+				<PROPERTY name="author"  default="author"></PROPERTY>
+				<PROPERTY name="name"  default="project1"></PROPERTY>
+				<PROPERTY name="about"  default=""></PROPERTY>
+			</TAB>
+		</ITEM>
+		<ITEM label="Run/Debug Setting">
+			<TAB label="General"  active="true"></TAB>
+			<TAB label="Android"></TAB>
+			<TAB label="IOS"></TAB>
+		</ITEM>
+	</ROOT>
+</TREE>

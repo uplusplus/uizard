@@ -1,0 +1,155 @@
+[{
+	file: {
+		value: "File",
+		children: {
+			file_new: {
+				value: "New...",
+				children: {
+					file_new_project: { value: "Project"},
+					file_new_web_project: { value: "Web Project"},
+					file_new_php_project: { value: "PHP Project"},
+					file_new_javascript_project: { value: "Javascript Project"},
+					file_new_mobile_project: { value: "Mobile Project"},
+					file_new_ios_project: { value: "iOS Project"},
+					file_new_android_project: { value: "Android Project"},
+					file_new_uml_project: { value: "UML Project"},
+					file_new_uizard_plugin_project: { value: "UIzard Plugin Project"},
+					file_new_uizard_customization_project: { value: "UIzard Customization Project"},
+					file_new_file: { value: "File"},
+					file_new_folder: { value: "Folder"},
+					file_new_untitled_text_file: { value: "Untitled Text File"},
+					file_new_other: { value: "Other..."}
+				}
+			},
+			file_open_project: { value: "Open_Project..."},
+			file_open_file: { value: "Open File..."},
+			file_open_url: { value: "Open Url..."},
+			file_close: { value: "Close"},
+			file_close_all: { value: "Close All"},
+			file_save: { value: "Save..."},
+			file_save_as: { value: "Save As..."},
+			file_save_all: { value: "Save All"},
+			file_revert: { value: "Revert"},
+			file_move: { value: "Move"},
+			file_rename: { value: "Rename"},
+			file_refresh: { value: "Refresh"},
+			file_print: { value: "Print"},
+			file_swich_workspace: { value: "Switch Workspace"},
+			file_restart: { value: "Restart"},
+			file_import: { value: "Import..."},
+			file_export: { value: "Export..."},
+			file_properties: { value: "Properties"},
+			file_exit: { value: "Exit"}
+		}
+	},	
+	
+	edit: {
+		value: "Edit",
+		children: {
+			edit_undo: { value: "Undo"},
+			edit_redo: { value: "Redo"},
+			edit_cut: { value: "Cut"},
+			edit_copy: { value: "Copy"},
+			edit_paste: { value: "Paste"},
+			edit_delete: { value: "Delete"},
+			edit_select_all: { value: "Select All"},
+			edit_find_replace: { value: "Find/Replace"},
+			edit_find_next: { value: "Find Next"},
+			edit_fine_previous: { value: "Find Previous"},
+			edit_preference: { value: "Preference"}
+		}
+	},
+	
+	design: {
+		value: "Design",
+		children: {
+			design_alignment: { 
+				value: "Alignment",
+				children: {
+					design_align_left: { value: "Align Left"},
+					design_align_right: { value: "Align Right"},
+					design_align_top: { value: "Align Top"},
+					design_align_bottom: { value: "Align Bottom"},
+					design_align_horizontally_center: { value: "Align Horizontally Center"},
+					design_align_vertically_center: { value: "Align Vertically Center"}
+				}
+			},
+			
+			design_bring_to_front: { value: "Bring to Front"},
+			design_send_to_back: { value: "Send to Back"},
+			design_bring_forward: { value: "Bring Forward"},
+			design_send_backward: { value: "Send Backward"}
+		}
+	},
+	
+	project: {
+		value: "Project",
+		children: {
+			project_generate: { value: "Generate"},
+			project_generate_all: { value: "Generate All"},
+			project_build_project: { value: "Build Project"},
+			project_build_all: { value: "Build All"},
+			project_clean: { value: "Clean"},
+			project_build_configuration: { value: "Build Configuration"},
+			project_properties: { value: "Properties"}
+		}
+	},
+	
+	collaboration: {
+		value: "Collaboartion",
+		children: {
+			collaboration_join_the_project: { value: "Join the project"},
+			collaboration_enable_chat: { value: "Enable Chat"},
+			collaboration_enable_real_time_editing: { value: "Enable Real-time Editing"},
+			collaboration_enable_real_time_drawing: { value: "Enable Real-time Drawing"},
+			collaboration_settings: { value: "Settings..."}
+		}
+	},
+	window:{
+		value: "Window",
+		children: {
+			window_new_main_window : { value: "New Main Window"}, 
+			window_previous_window : { value: "Previous Window"},
+			window_next_window : { value: "Next Window"},
+			window_previous_tab : { value: "Previous Tab"},
+			window_next_tab : { value: "Next Tab"},
+			perspectives: { 
+				value: "Perspectives",
+				children: {
+					window_left_layout : { value: "Left Layout"},
+					window_left_layout_show_hide : { value: "Show/Hide"},
+					window_left_layout_toggle_project_explorer : { value: "Toggle Project Explorer"},
+					window_left_layout_toggle_toolbox : { value: "Toggle Toolbox"},
+					window_right_layout : { value: "Right Layout"},
+					window_right_layout_show_hide : { value: "Show/Hide"},
+					window_right_layout_toggle_properties : { value: "Toggle Properties"},
+					window_right_layout_toggle_object_explorer : { value: "Toggle Object Explorer"},
+					window_bottom_layout : {value: "Bottom Layout"},
+					window_bottom_layout_show_hide : { value: "Show/Hide"},
+					window_bottom_layout_toggle_messages : { value: "Toggle Messages"},
+					window_bottom_layout_toggle_generator : { value: "Toggle Generator"},
+					window_bottom_layout_toggle_chat : { value: "Toggle Chat"}
+				}
+			},
+			window_toggle_full_workspace : { value: "Toggle Full Workspace"},
+			window_hide_all_window : { value: "Hide All Window"},
+			window_show_all_window : { value: "Show All Window"},
+			window_cascade : { value: "Cascade"},
+			window_tile_vertically : { value: "Tile Vertically"},
+			window_tile_horizontally : { value: "Tile Horizontally"}
+		}
+	
+	},
+	
+	help: {
+		value: "Help",
+		children: {
+			help_help_contents: { value: "Help Contents"},
+			help_search: { value: "Search"},
+			help_tips_and_tricks: { value: "Tips and Tricks..."},
+			help_check_for_updates: { value: "Check for Updates"},
+			help_install_new_plugin: { value: "Install New Plugin..."},
+			help_about_uizard_3: { value: "About UIzard 3"}
+		}
+	}	
+}]

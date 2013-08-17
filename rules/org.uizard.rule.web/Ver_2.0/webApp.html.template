@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Template>
+
+	<Expansion>html</Expansion>
+
+	<Header>
+	<![CDATA[
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{!ProjectName!}</title>
+
+{!CSSFILES!}
+{!JSFILES!}
+	]]>	
+	</Header>
+	
+	<Body>
+	<![CDATA[
+</head>
+
+<!-- HTML : BODY -->
+<body class="yui-skin-sam" topmargin="0" leftmargin="0">	
+	]]>	
+	</Body>
+	
+	<Footer>
+	<![CDATA[
+</body>
+
+<!-- {ProjectName}.js -->
+<script type="text/javascript" src="{!ProjectName!}.js"></script>
+
+</html>
+	]]>	
+	</Footer>
+	
+</Template>

@@ -1,0 +1,22 @@
+.helpContentsTitle{
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.helpContentsSubtitle{
+	margin-left: 10px;
+	margin-right: 10px;
+	color: rgb(180,180,180);
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.helpContentsDescription{
+	margin-left: 10px;
+	margin-right: 10px;
+	color: black;
+}

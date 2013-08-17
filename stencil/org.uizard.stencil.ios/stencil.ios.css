@@ -1,0 +1,138 @@
+/* Button */
+.iosButtonImageTable {
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+
+.iosButtonImageTable .ltCell {
+	width:5px;
+	height:5px;
+	background-image:url('images/button/LT_button.png');
+	background-repeat:no-repeat;
+}
+
+.iosButtonImageTable .tCell {
+	background-image:url('images/button/T_button.png');
+	background-repeat:repeat-x;
+}
+
+.iosButtonImageTable .rtCell {
+	width:5px; 
+	height:5px; 
+	background-image:url('images/button/RT_button.png');
+	background-repeat:no-repeat;	
+}
+
+.iosButtonImageTable .lCell {
+	width:5px;
+	background-image:url('images/button/L_button.png');
+	background-repeat:repeat-y;
+}
+
+.iosButtonImageTable .cCell {
+	background-color:#ccc;
+	overflow:hidden;
+	text-align: center;
+}
+
+.iosButtonImageTable .rCell {
+	width:5px;
+	background-image:url('images/button/R_button.png');
+	background-repeat:repeat-y;
+}
+
+.iosButtonImageTable .lbCell {
+	width:5px;
+	height:5px; 
+	background-image:url('images/button/LB_button.png'); 
+	background-repeat:no-repeat;	
+}
+
+.iosButtonImageTable .bCell {
+	background-image:url('images/button/B_button.png'); 
+	background-repeat:repeat-x;
+}
+
+.iosButtonImageTable .rbCell {
+	width:5px; 
+	height:5px; 
+	background-image:url('images/button/RB_button.png'); 
+	background-repeat:no-repeat;
+}
+
+/* Check Box */
+.iosCheckBox {
+	height:100%; 
+	width:100%;
+	margin:0 auto;
+}
+
+.iosCheckBox .checkButton{
+	height:100%;
+	width:100%;
+	background-image:url('images/checkBox/checkBox.png'); 
+	background-repeat:no-repeat; 
+	background-size:100%;
+}
+
+.iosCheckBox .checkLabel{
+	overflow:visible; 
+	width:100%;
+	text-align:left; 
+	padding:5px;
+	font-weight: bold;
+}
+
+/* Radio Box */
+.iosRadioBox {
+	height:100%; 
+	width:100%;
+	margin:0 auto; 
+}
+
+.iosRadioBox .radioButton{
+	height:100%;
+	width:100%;
+	background-image:url('images/radioButton/radioButton.png');
+	background-repeat:no-repeat; 
+	background-size:100%;
+}
+
+.iosRadioBox .radioLabel{
+	overflow:visible; 
+	width:100%;
+	text-align:left; 
+	padding:5px;
+	font-weight: bold;
+}
+
+/* Label */
+.iosLabel {
+	height:100%; 
+	width:100%;
+	background-color:white;
+	border:1px solid #ccc;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: center;
+	line-height: 12px;
+	font-size: 11px;
+}
+
+.iosLabel .textbox {
+	text-align: center;
+   	padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

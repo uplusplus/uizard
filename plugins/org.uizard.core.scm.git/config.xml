@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin name="GIT" description="testPlugin">
+	<package>org.uizard.core.debug.uml</package>
+	<version>1.0.0</version>
+	<url>http://fluginURL.net</url>
+	<resources>
+		<file>plug.js</file>
+	</resources>
+	<tree>
+		<item label="GIT" src="plugins/org.uizard.core.codeGenerator.oz/preference.html" />
+	</tree>
+</plugin>

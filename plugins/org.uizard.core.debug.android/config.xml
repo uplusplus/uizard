@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin name="testPlugin" description="testPlugin">
+	<package>org.uizard.core.debug.test</package>
+	<version>1.0.1</version>
+	<url>http://skima.skku.edu/~moyara</url>
+	<resources>
+		<folder name="images">
+			<folder name="1">
+				<file>image1.jpg</file>
+			</folder>
+			<file>image.jpg</file>
+		</folder>
+		<file>plug.js</file>
+	</resources>
+	<tree>
+		<item label="testPlugin">
+			<tab label="tab1" src="plugins/org.uizard.core.codeGenerator.oz/preference.html" />
+			<tab label="tab2" src="plugins/org.uizard.core.codeGenerator.oz/preference.html" />
+		</item>
+	</tree>
+</plugin>

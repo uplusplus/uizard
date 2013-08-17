@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin name="project.android" description="testPlugin">
+	<package>org.uizard.core.project.iphone</package>
+	<version>1.0.0</version>
+	<url>http://</url>
+	<resources>
+		<folder name="template">
+			<folder name="template.xcodeproj">
+				<file>template.project.pbxproj</file>
+			</folder>
+		</folder>
+		<file>plug.js</file>
+		<file>addXcodeProj.php</file>
+		<file>generateXcodeProj.php</file>
+	</resources>
+</plugin>

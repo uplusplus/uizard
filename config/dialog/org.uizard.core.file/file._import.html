@@ -1,0 +1,62 @@
+<div id="fileImport" style="text-align:left; font-size:11px;">
+	<form id="myForm" action="module/org.uizard.core.file/file._import.php" method="post" enctype="multipart/form-data"> 
+		<div class="wizardStep" step="1">
+	
+			<div style="width:580px; height:50px; overflow:auto; font-size:11px; margin-top:8px;">
+		    	<div style="float:left;">
+		        	<font style="font-size:12px">Select an import source:</font> 
+	    			<input type"text" name="filterText" style="width:570px; height:20px" value="type filter text"/>
+		        </div>
+			</div>
+		   	
+		   	<div style="float:left; width:562px; height:150px; padding:5px; border:1px solid #ccc; background-color:#fff; overflow:auto; font-size:11px;">
+		    
+		        <div id="importSourceTreeview">
+		            <ul>
+		                <li>General
+		                    <ul>
+		                        <li>Archive File</li>
+		                        <li>Existing Projects into Workspace</li>
+		                        <li>File System</li>
+		                        <li>Preferences</li>
+		                    </ul>
+		                </li>
+		                <li>Git
+		                    <ul>
+		                        <li>Git Repository</li>
+		                    </ul>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+		<div class="wizardStep" step="2" style="display:none;">
+			<div style="width:100%; height:20px; overflow:auto; font-size:11px;">
+				Choose the path that want to upload.
+			</div>
+			<div style="width:100%; height:50px; overflow:auto; font-size:11px;">
+		    	<div style="float:left;">
+					<input type="file" name="file">
+					<div id="uploadOutput"></div>
+		        </div>
+		    </div>
+	    </div>
+		<div class="wizardStep" step="3" style="display:none;">
+			<div style="width:100%; height:20px; overflow:auto; font-size:11px;">
+				Choose the path that want to upload.
+			</div>
+			<div style="width:100%; height:20px; overflow:auto; font-size:11px;">
+		    	<div style="float:left;">
+		        	Location : 
+		            <input type="text" name="fileImportSelectPath" id="fileImportSelectPath" style="width:400px; height:15px;">
+		        </div>
+		    </div>
+			<div id="importDialogMiddle" style="width:580px; height:210px; margin-top:8px; overflow:auto; font-size:11px;">
+				<div id="importDialogLeft">
+					<div id="fileImportTreeview"></div>
+				</div>
+				<div id="importDialogCenter"></div>
+		    </div>
+	    </div>
+    </form>
+</div>

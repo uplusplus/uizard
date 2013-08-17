@@ -1,0 +1,155 @@
+[{
+	file: {
+		value: "파일",
+		children: {
+			file_new: {
+				value: "새로만들기",
+				children: {
+					file_new_project: { value: "프로젝트"},
+					file_new_web_project: { value: "Web 프로젝트"},
+					file_new_php_project: { value: "PHP 프로젝트"},
+					file_new_javascript_project: { value: "Javascript 프로젝트"},
+					file_new_mobile_project: { value: "모바일 프로젝트"},
+					file_new_ios_project: { value: "iOS 프로젝트"},
+					file_new_android_project: { value: "Android 프로젝트"},
+					file_new_uml_project: { value: "UML 프로젝트"},
+					file_new_uizard_plugin_project: { value: "UIzard 플러그인 프로젝트"},
+					file_new_uizard_customization_project: { value: "UIzard Customization 프로젝트"},
+					file_new_file: { value: "파일"},
+					file_new_folder: { value: "폴더"},
+					file_new_untitled_text_file: { value: "텍스트 파일"},
+					file_new_other: { value: "기타..."}
+				}
+			},
+			file_open_project: { value: "프로젝트 열기..."},
+			file_open_file: { value: "파일 열기..."},
+			file_open_url: { value: "Url 열기..."},
+			file_close: { value: "닫기"},
+			file_close_all: { value: "모두 닫기"},
+			file_save: { value: "저장..."},
+			file_save_as: { value: "다른 이름으로 저장..."},
+			file_save_all: { value: "모두 저장"},
+			file_revert: { value: "되돌리기"},
+			file_move: { value: "이동"},
+			file_rename: { value: "이름 변경"},
+			file_refresh: { value: "새로고침"},
+			file_print: { value: "인쇄"},
+			file_swich_workspace: { value: "워크스페이스 변경"},
+			file_restart: { value: "재시작"},
+			file_import: { value: "가져오기..."},
+			file_export: { value: "내보내기..."},
+			file_properties: { value: "속성"},
+			file_exit: { value: "종료"}
+		}
+	},	
+	
+	edit: {
+		value: "편집",
+		children: {
+			edit_undo: {value: "되돌리기"},
+			edit_redo: { value: "다시 적용"},
+			edit_cut: { value: "잘라내기"},
+			edit_copy: { value: "복사"},
+			edit_paste: { value: "붙여넣기"},
+			edit_delete: { value: "삭제"},
+			edit_select_all: { value: "모두 선택"},
+			edit_find_replace: { value: "찾기/바꾸기"},
+			edit_find_next: { value: "다음 찾기"},
+			edit_fine_previous: { value: "이전 찾기"},
+			edit_preference: { value: "속성"}
+		}
+	},
+	
+	design: {
+		value: "디자인",
+		children: {
+			design_alignment: { 
+				value: "정렬",
+				children: {
+					design_align_left: { value: "왼쪽 정렬"},
+					design_align_right: { value: "오른쪽 정렬"},
+					design_align_top: { value: "위쪽 정렬"},
+					design_align_bottom: { value: "아래쪽 정렬"},
+					design_align_horizontally_center: { value: "수평 정렬"},
+					design_align_vertically_center: { value: "수직 정렬"}
+				}
+			},
+			
+			design_bring_to_front: { value: "맨 앞으로 가져오기"},
+			design_send_to_back: { value: "맨 뒤로 보내기"},
+			design_bring_forward: { value: "앞으로 가져오기"},
+			design_send_backward: { value: "뒤로 보내기"}
+		}
+	},
+	
+	project: {
+		value: "프로젝트",
+		children: {
+		project_generate: { value: "생성"},
+			project_generate_all: { value: "모두 생성"},
+			project_build_project: { value: "프로젝트 빌드"},
+			project_build_all: { value: "모두 빌드"},
+			project_clean: { value: "비우기"},
+			project_build_configuration: { value: "Configuration 빌드"},
+			project_properties: { value: "속성"}
+		}
+	},
+	
+	collaboration: {
+		value: "협업",
+		children: {
+			collaboration_join_the_project: { value: "프로젝트 참여"},
+			collaboration_enable_chat: { value: "채팅 활성화"},
+			collaboration_enable_real_time_editing: { value: "실시간 편집 활성화"},
+			collaboration_enable_real_time_drawing: { value: "실시간 그리기 활성화"},
+			collaboration_settings: { value: "설정..."}
+		}
+	},
+	window:{
+		value: "창",
+		children: {
+			window_new_main_window : { value: "새 메인 창"}, 
+			window_previous_window : { value: "이전 창"},
+			window_next_window : { value: "이전 창"},
+			window_previous_tab : { value: "이전 탭"},
+			window_next_tab : { value: "다음 탭"},
+			perspectives: { 
+				value: "Perspectives",
+				children: {
+					window_left_layout : { value: "왼쪽 레이아웃"},
+					window_left_layout_show_hide : { value: "보이기/숨기기"},
+					window_left_layout_toggle_project_explorer : { value: "프로젝트 탐색기 토글"},
+					window_left_layout_toggle_toolbox : { value: "도구상자 토글"},
+					window_right_layout : { value: "오른쪽 레이아웃"},
+					window_right_layout_show_hide : { value: "보이기/숨기기"},
+					window_right_layout_toggle_properties : { value: "속성 토글"},
+					window_right_layout_toggle_object_explorer : { value: "Object 탐색기 토글"},
+					window_bottom_layout : {value: "아래쪽 레이아웃"},
+					window_bottom_layout_show_hide : { value: "보이기/숨기기"},
+					window_bottom_layout_toggle_messages : { value: "메세지 토글"},
+					window_bottom_layout_toggle_generator : { value: "Generator 토글"},
+					window_bottom_layout_toggle_chat : { value: "채팅 토글"}
+				}
+			},
+			window_toggle_full_workspace : { value: "Toggle Full Workspace"},
+			window_hide_all_window : { value: "모든 창 숨기기"},
+			window_show_all_window : { value: "모든 창 보이기"},
+			window_cascade : { value: "Cascade"},
+			window_tile_vertically : { value: "Tile Vertically"},
+			window_tile_horizontally : { value: "Tile Horizontally"}
+		}
+	
+	},
+	
+	help: {
+		value: "도움말",
+		children: {
+			help_help_contents: { value: "Help Contents"},
+			help_search: { value: "검색"},
+			help_tips_and_tricks: { value: "Tips and Tricks..."},
+			help_check_for_updates: { value: "업데이트 확인"},
+			help_install_new_plugin: { value: "새 플러그인 설치…"},
+			help_about_uizard_3: { value: "UIzard 3 대하여"}
+		}
+	}	
+}]

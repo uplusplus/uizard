@@ -1,0 +1,147 @@
+#uizardDialogContainer .hd {
+	text-align:left;
+	font-size:11px;
+}
+
+
+#uizardDialogContainer .ygtvtn {
+	background:transparent none repeat scroll 0 0;
+	height:16px;
+	width:1em;
+}
+
+#uizardDialogContainer .ygtvtm {
+	background:transparent url(../../image/org.uizard.core.dialog/sprite-menu.gif) no-repeat scroll -8px 2px;
+	height:16px;
+	width:1em;
+}
+
+#uizardDialogContainer .ygtvtmh {
+	background:transparent url(../../image/org.uizard.core.dialog/sprite-menu.gif) no-repeat scroll -8px -77px;
+	height:16px;
+	width:1em;
+}
+
+#uizardDialogContainer .ygtvtp {
+	background:transparent url(../../image/org.uizard.core.dialog/sprite-menu.gif) no-repeat scroll -8px -315px;
+	height:16px;
+	width:1em;
+}
+
+#uizardDialogContainer .ygtvtph {
+	background:transparent url(../../image/org.uizard.core.dialog/sprite-menu.gif) no-repeat scroll -8px -395px;
+	height:16px;
+	width:1em;
+}
+
+#uizardDialogContainer .ygtvln {
+	background:transparent none repeat scroll 0 0;
+	height:16px;
+	width:1em;
+}
+
+#uizardDialogContainer .ygtvlm {
+	background:transparent url(../../image/org.uizard.core.dialog/sprite-menu.gif) no-repeat scroll -8px 2px;
+	height:16px;
+	width:1em;
+}
+
+#uizardDialogContainer .ygtvlmh {
+	background:transparent url(../../image/org.uizard.core.dialog/sprite-menu.gif) no-repeat scroll -8px -77px;
+	height:16px;
+	width:1em;
+}
+
+#uizardDialogContainer .ygtvlp {
+	background:transparent url(../../image/org.uizard.core.dialog/sprite-menu.gif) no-repeat scroll -8px -315px;
+	height:16px;
+	width:1em;
+}
+
+#uizardDialogContainer .ygtvlph {
+	background:transparent url(../../image/org.uizard.core.dialog/sprite-menu.gif) no-repeat scroll -8px -395px;
+	height:16px;
+	width:1em;
+}
+
+#uizardDialogContainer .ygtvdepthcell {
+	background:transparent none repeat scroll 0 0;
+	height:16px;
+	width:1em;
+	cursor:default;
+}
+
+#uizardDialogContainer .ygtvln, .ygtvtn {
+	cursor:default;
+}
+
+#uizardDialogContainer .ygtvspacer {
+	width:10px;
+}
+
+#uizardDialogContainer .ygtvblankdepthcell {
+	width:10px;
+}
+
+#uizardDialogContainer .ygtvlabel {
+	padding-left:3px;
+}
+
+#uizardDialogContainer .openDialogCenter_item {
+	float: left;
+	margin:10px;
+	padding:10px;
+	border:1px solid #000;
+	width:50px;
+	height:60px;
+	background-color:#ddd;
+	text-align:center;
+	cursor:pointer;
+}
+
+#uizardDialogContainer .importDialogCenter_item {
+	float: left;
+	margin:10px;
+	padding:10px;
+	border:1px solid #000;
+	width:50px;
+	height:60px;
+	background-color:#ddd;
+	text-align:center;
+	cursor:pointer;
+}
+
+#uizardDialogContainer .selector_project {
+	float:left;
+	margin:10px;
+	padding:10px;
+	border:1px solid #000;
+	width:100px;
+	background-color:#ddd;
+	text-align:center;
+	cursor:pointer;
+}
+
+#uizardDialogContainer .selectedButton {
+	background-color: #b3d4ff;
+}
+
+#projectOpenDialogMiddle .yui-layout-wrap {
+	border:1px solid #999;
+	background-color: #fff;
+}
+
+#fileExportDialogMiddle .yui-layout-wrap {
+	border:1px solid #999;
+	background-color: #fff;
+}
+
+#openDialogMiddle .yui-layout-wrap {
+	border:1px solid #999;
+	background-color: #fff;
+}
+
+#importDialogMiddle .yui-layout-wrap {
+	border:1px solid #999;
+	background-color: #fff;
+}

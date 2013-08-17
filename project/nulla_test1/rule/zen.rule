@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<zeneration>
+
+	<info>
+		<targetPlatform>iPhoneUIDevelopment</targetPlatform>
+		<targetPlatformVersion>Ver_4.1</targetPlatformVersion>
+		<ruleVersion>1.0</ruleVersion>
+	</info>
+
+	<filelist>
+		<file from="DefaultAppDelegate.h.template" to="DefaultAppDelegate.h" />
+		<file from="DefaultAppDelegate.m.template" to="DefaultAppDelegate.m" />
+		<file from="DefaultViewController.h.template" to="DefaultViewController.h" />
+		<file from="DefaultViewController.m.template" to="DefaultViewController.m" />
+		<file from="main.m.template" to="main.m" />
+	</filelist>
+
+<!-- Rules Start -->
+
+<rules>
+  	
+  <!-- Rule for DefaultAppDelegate.h -->
+	<rule template="DefaultAppDelegate.h">
+  		<target id="default">
+  		</target>		
+	</rule>
+  <!-- Rule for DefaultAppDelegate.m -->
+	<rule template="DefaultAppDelegate.m">
+  		<target id="default">
+  		</target>		
+	</rule>
+  <!-- Rule for DefaultViewController.h -->
+	<rule template="DefaultViewController.h">
+		<target id="AddImport">
+			<mapping from="map">
+				<header>
+<![CDATA[
+	#import <MapKit/MapKit.h>
+]]>
+				</header>
+				<footer>
+				</footer>
+			</mapping>
+		</target>
+		<target id="AddDelegate">
+		</target>
+	</rule>
+  <!-- Rule for DefaultViewController.m -->
+	<rule template="DefaultViewController.m">
+  		<target id="AddSource">
+			<mapping from="button">
+				<header>
+<![CDATA[
+	UIButton *#(objectid)# = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	#(objectid)#.frame = CGRectMake(#(x)#, #(y)#, #(width)#, #(height)#);
+	#(objectid)#.center = CGPointMake(#(width)#/2+#(x)#, #(height)#/2+#(y)#);
+	[#(objectid)# setTitle:@"#(label)#" forState:UIControlStateNormal];
+	/* [button addTarget:self action:@selector() forControlEvents:UIControlEventTouchUpInside]; */
+	#(objectid)#.hidden = NO;
+	#(objectid)#.alpha = 1.0f;
+	[self.view addSubview:#(objectid)#];
+]]>
+  				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+  			<mapping from="navi_title">
+				<header>
+<![CDATA[
+	UINavigationBar *#(objectid)# = [[UINavigationBar alloc] initWithFrame: CGRectMake(0.0, 0.0, 320.0, 40.0)];
+	UINavigationItem *naviItem = [[UINavigationItem alloc] initWithTitle:@"#(label)#"];
+	[#(objectid)# pushNavigationItem:naviItem];
+]]>
+				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+			<mapping from="text_field">
+				<header>
+<![CDATA[
+	UITextField *#(objectid)# = [[UITextField alloc] initWithFrame: CGRectMake(#(x)#, #(y)#, #(width)#, #(height)#)];
+	[#(objectid)# setBorderStyle:UITextBorderStyleRoundedRect];
+	[#(objectid)# setText:@"#(label)#"];
+	[self.view addSubview:#(objectid)#];
+]]>
+				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+			<mapping from="label">
+				<header>
+<![CDATA[
+	UILabel *#(objectid)# = [[UILabel alloc] initWithFrame: CGRectMake(#(x)#, #(y)#, #(width)#, #(height)#)];
+	[#(objectid)# setText:@"#(label)#"];
+	[self.view addSubview:#(objectid)#];
+]]>
+				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+			<mapping from="image">
+				<header>
+<![CDATA[
+	UIImageView *#(objectid)# = [[UILabel alloc] initWithFrame: self.view.bounds];
+	[#(objectid)# initWithImage:[UIImage imageNamed: @""]];
+	[self.view addSubview:#(objectid)#];
+]]>
+				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+			<mapping from="web">
+				<header>
+<![CDATA[
+	UIWebView *#(objectid)# = [[UIWebView alloc] initWithFrame: self.view.bounds];
+	[#(objectid)# loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"#(datasourceURL)#"]]];
+	[self.view addSubview:#(objectid)#];
+]]>
+				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+			<mapping from="map">
+				<header>
+<![CDATA[
+	MKMapView *#(objectid)# = [[MKMapView alloc] initWithFrame:self.view.bounds];
+	#(objectid)#.showsUserLocation = YES;
+	#(objectid)#.zoomEnabled = YES;
+	#(objectid)#.delegate = self;
+]]>
+  				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+			<mapping from="text">
+				<header>
+<![CDATA[
+	UITextView *#(objectid)# = [[UITextView alloc] initWithFrame: CGRectMake(#(x)#, #(y)#, #(width)#, #(height)#)];
+	[#(objectid)# setEditable:NO];
+	[#(objectid)# setTextAlignment:UITextAlignmentLeft];
+	[#(objectid)# setText:@"#(value)#"];
+	[self.view addSubview:#(objectid)#];
+]]>
+  				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+			<mapping from="segment">
+				<header>
+<![CDATA[
+	UISegmentedControl *segmentedControl
+	UITextView *#(objectid)# = [[UITextView alloc] initWithFrame: CGRectMake(#(x)#, #(y)#, #(width)#, #(height)#)];
+	[#(objectid)# setEditable:NO];
+	[#(objectid)# setTextAlignment:UITextAlignmentLeft];
+	[#(objectid)# setText:@"#(value)#"];
+	[self.view addSubview:#(objectid)#];
+]]>
+  				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+			<mapping from="activity">
+				<header>
+<![CDATA[
+	UIActivityIndicatorView *#(objectid)# = [[UIActivityIndicatorView alloc] initWithFrame: CGRectMake(#(x)#, #(y)#, #(width)#, #(height)#)];
+	[#(objectid)# setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
+	[#(objectid)# setHidesWhenStopped:NO];
+	[#(objectid)# startAnimating];
+]]>
+  				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+			<mapping from="progress">
+				<header>
+<![CDATA[
+	UIProgressView *#(objectid)# = [[UIProgressView alloc] initWithFrame: CGRectMake(#(x)#, #(y)#, #(width)#, #(height)#)];
+	[#(objectid)# setProgressViewStyle:UIProgressViewStyleDefault];
+	[self.view addSubview:#(objectid)#];
+]]>
+  				</header>
+  				<footer>
+  				</footer>
+  			</mapping>
+  		</target>		
+	</rule>
+  <!-- Rule for main.m -->
+	<rule template="main.m">
+  		<target id="default">
+  		</target>		
+	</rule>
+</rules>
+<!-- Rules End -->
+
+</zeneration>
+

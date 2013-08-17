@@ -1,0 +1,84 @@
+<!--
+Copyright Sung-tae Ryu. All rights reserved.
+Code licensed under the GPL v2 License:
+http://www.uizard.org/License
+version: 3.0.0
+-->
+<div id="project.explorer.file">
+    <div class="bd">
+        <ul class="first-of-type">
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#File">Open</a>
+            </li>
+            <li class="yuimenuitem">
+                <a class="yuimenuitemlabel" href="#OpenAs">Open As...</a>
+                <div id="OpenAs" class="yuimenu"> 
+                    <div class="bd"> 
+                        <ul class="first-of-type"> 
+                            <li class="yuimenuitem"> 
+                                <a class="yuimenuitemlabel" href="#" onclick="menuActionManager.newProject();">Default Editor</a>
+                            </li>
+                        </ul>
+                        <ul> 
+                            <li class="yuimenuitem">
+                                <a class="yuimenuitemlabel" href="#" onclick="menuActionManager.newFile('xoz');">Text Editor</a>
+                            </li>
+                            <li class="yuimenuitem">
+                                <a class="yuimenuitemlabel" href="#" onclick="menuActionManager.newFile('rule');">Code Editor</a>
+                            </li>
+                            <li class="yuimenuitem">
+                                <a class="yuimenuitemlabel" href="#" onclick="menuActionManager.newFile('template');">UI Designer</a> 
+                            </li>
+                            <li class="yuimenuitem">
+                                <a class="yuimenuitemlabel" href="#" onclick="menuActionManager.newFile('template');">UML Designer</a> 
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </li>
+            <li class="yuimenuitem">
+                <a class="yuimenuitemlabel" href="#" action="contextRename">Rename</a>
+            </li>
+            <li class="yuimenuitem">
+                <a class="yuimenuitemlabel" href="#Edit">Menu</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#Edit">Import </a>
+            </li>
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#Edit">Export </a>
+            </li>            
+        </ul>
+         <ul>
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#Edit" action="svn_commit">Commit </a>
+            </li>
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#Edit" action="svn_update">Update </a>
+            </li>
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#Edit" action="svn_revert">Revert </a>
+            </li>  
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#Edit" action="svn_add">Add </a>
+            </li>
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#Edit" action="svn_del">Del </a>
+            </li>
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#Edit" action="svn_account">Account </a>
+            </li>
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#Edit" action="svn_revision">Show Revision </a>
+            </li>
+        </ul>
+        
+        <ul>
+            <li class="yuimenuitem first-of-type">
+                <a class="yuimenuitemlabel" href="#Edit">Properties </a>
+            </li>
+        </ul>
+    </div>
+</div>

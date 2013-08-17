@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<zeneration>
+
+	<info>
+		<targetPlatform>GeneralWebApp</targetPlatform>
+		<targetPlatformVersion>Ver_2.0</targetPlatformVersion>
+		<ruleVersion>1.0</ruleVersion>
+	</info>
+
+	<filelist>
+		<!--
+		<file from="webApp.html.template" to="webApp.html" />
+		<file from="webApp.js.template" to="webApp.js" />
+		-->
+	</filelist>
+
+<!-- Rules Start -->
+
+  <rules>
+  	
+  <!-- Rule for webApp.html -->
+		<rule template="webApp.html">
+  		<target id="Interface">
+  			<mapping from="view">
+  			  <header>
+  				<![CDATA[
+@interface view_#(id)#: UIView
+{
+	[{!Create_#(id)#!}]
+}
+@end
+
+@implementation view_#(id)#
+
+- (id) initWithFrame: (CGRect) aFrame;
+{
+	self = [super initWithFrame:aFrame];
+
+	[{!Init_#(id)#!}]
+
+	return self;
+}
+
+@end
+
+@interface #(id)#Controller : UIViewController
+{
+  view_#(id)# *contentView;
+}
+@end
+
+@implementation #(id)#Controller
+
+- (#(id)#Controller *) initWith: (NSString *) title
+{
+	self = [super init];
+	self.title = title;
+	
+	return self;
+}
+
+- (void)loadView
+{
+	// Load an application image and set it as the primary view
+	contentView = [[view_#(id)# alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+	contentView.backgroundColor = [UIColor blackColor];
+	self.view = contentView;
+	[contentView release];
+}
+
+@end
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="list">
+  			  <header>
+  				<![CDATA[
+@interface #(id)#Controller : UITableViewController
+{
+  NSArray *mStrings;
+}
+@end
+
+@implementation #(id)#Controller
+
+- (#(id)#Controller *) initWith: (NSString *) title
+{
+	self = [super init];
+	self.title = title;
+	
+	mStrings = [[NSArray alloc] initWithObjects:@"Park Ji Sung", @"Lee Cheong Yong", @"Ki Seong Young", @"Park Joo Young", @"Wayne Rooney", @"Frank Lampard", @"Steven Gerrad", @"Lionel Messi", @"Xavi Alonso", @"Ryan Giggs", @"Paul Scholes", @"Alex Furgurson", @"Samuel Etoo", @"Steven Fletcher", nil];
+	
+	return self;
+}
+
+- (NSInteger)numberOfSelectionsInTableView:(UITableView *) tableView
+{
+	return 1;
+}
+
+- (NSInteger)tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger) section
+{
+	return [mStrings count];
+}
+
+- (UITableViewCell *) tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *) indexPath
+{
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"any-cell"];
+	if(cell == nil) {
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"any-cell"] autorelease];
+	}
+	cell.text = [mStrings objectAtIndex:[indexPath row]];
+	return cell;
+}
+
+- (void)tableView:(UITableView *) tableView didSelectRowAtIndexPath:(NSIndexPath *) newIndexPath
+{
+	printf("User selected row %d\n", [newIndexPath row] + 1);
+}
+
+- (void)loadView
+{
+	[super loadView];
+	self.navigationItem.titleView = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 4.0f, 320.0f, 36.0f)];
+	[(UILabel *)self.navigationItem.titleView setText:@"#(label)#"];
+	[(UILabel *)self.navigationItem.titleView setBackgroundColor: [UIColor clearColor]];
+	[(UILabel *)self.navigationItem.titleView setTextColor:[UIColor whiteColor]];
+	[(UILabel *)self.navigationItem.titleView setTextAlignment:UITextAlignmentCenter];
+	[(UILabel *)self.navigationItem.titleView setFont:[UIFont boldSystemFontOfSize:[UIFont systemFontSize]]];
+}
+
+- (void) dealloc
+{
+	[super dealloc];
+}
+
+@end
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="tabItem">
+  			  <header>
+  				<![CDATA[
+@interface view_#(id)#: UIView
+{
+	[{!Create_#(id)#!}]
+}
+@end
+
+@implementation view_#(id)#
+
+- (id) initWithFrame: (CGRect) aFrame;
+{
+	self = [super initWithFrame:aFrame];
+
+	[{!Init_#(id)#!}]
+
+	return self;
+}
+
+@end
+
+@interface #(id)#Controller : UIViewController
+{
+  view_#(id)# *contentView;
+}
+@end
+
+@implementation #(id)#Controller
+
+- (#(id)#Controller *) initWith: (NSString *) title
+{
+	self = [super init];
+	self.title = title;
+	
+	return self;
+}
+
+- (void)loadView
+{
+	// Load an application image and set it as the primary view
+	contentView = [[view_#(id)# alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+	contentView.backgroundColor = [UIColor blackColor];
+	self.view = contentView;
+	[contentView release];
+}
+
+@end
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  				]]>
+  				</footer>
+  			</mapping>
+  		</target>		
+  		<target id="AppDelegate">
+  			<mapping from="view">
+  			  <header>
+  				<![CDATA[
+	#(id)#Controller *#(id)# = [[#(id)#Controller alloc] initWith: @"#(label)#"];
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+	[window addSubview:#(id)#.view];
+    				
+	[#(id)# release];
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="list">
+  			  <header>
+  				<![CDATA[
+	#(id)#Controller *#(id)# = [[#(id)#Controller alloc] initWith: @"#(label)#"];
+	UINavigationController *nav#(id)# = [[UINavigationController alloc] initWithRootViewController:#(id)#];
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+	[#(parent)#.view addSubview:nav#(id)#.view];
+	[#(id)# release];
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="tab">
+  			  <header>
+  				<![CDATA[
+	NSMutableArray *controllers = [[NSMutableArray alloc] init];
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+	UITabBarController *tabBarController = [[UITabBarController alloc] init];
+	tabBarController.viewControllers = controllers;
+	[controllers release];
+
+	[window addSubview:tabBarController.view];
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="tabItem">
+  			  <header>
+  				<![CDATA[
+	#(id)#Controller *#(id)# = [[#(id)#Controller alloc] initWith: @"#(label)#"];
+	UINavigationController *nav#(id)# = [[UINavigationController alloc] initWithRootViewController:#(id)#];
+	nav#(id)#.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+	[nav#(id)# setNavigationBarHidden:YES];
+	[controllers addObject:nav#(id)#];
+	[#(id)# release];
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  				]]>
+  				</footer>
+  			</mapping>
+  		</target>
+		  <target id="Create_#(id)#">
+  			<mapping from="view">
+  			  <header>
+  				<![CDATA[
+	UIView *#(id)#;
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="image">
+  			  <header>
+  				<![CDATA[
+	UIImageView *#(id)#;
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="list">
+  			  <header>
+  				<![CDATA[
+	UITableView *#(id)#;
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[]]>
+  				</footer>
+  			</mapping>
+        <mapping from="tab">
+  			  <header>
+  				<![CDATA[
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="label">
+  			  <header>
+  				<![CDATA[
+	UILabel *#(id)#;
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="input">
+  			  <header>
+  				<![CDATA[
+	UITextField *#(id)#;
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="button">
+  			  <header>
+  				<![CDATA[
+	UIButton *#(id)#;
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="slider">
+  			  <header>
+  				<![CDATA[
+	UISlider *#(id)#;
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[]]>
+  				</footer>
+  			</mapping>
+  		</target>
+		  <target id="Init_#(id)#">
+  			<mapping from="view">
+  			  <header>
+  				<![CDATA[
+	#(id)# = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="image">
+  			  <header>
+  				<![CDATA[
+	#(id)# = [[UIImageView alloc] initWithFrame:CGRectMake(#(left)#.0f, #(top)#.0f, #(width)#.0f, #(height)#.0f)];
+	#(id)#.image = [UIImage imageNamed:@"#(filename)#.#(filetype)#"];
+	#(id)#.userInteractionEnabled = NO;
+	[#(id)# setAlpha:(float)1.0f];
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+	[self addSubview:#(id)#];
+	[#(id)# release];
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="list">
+  			  <header>
+  				<![CDATA[
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  				]]>
+  				</footer>
+  			</mapping>
+        <mapping from="tab">
+  			  <header>
+  				<![CDATA[
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="label">
+  			  <header>
+  				<![CDATA[
+	#(id)# = [[UILabel alloc] initWithFrame:CGRectMake(#(left)#.0f, #(top)#.0f, #(width)#.0f, #(height)#.0f)];
+	#(id)#.text = @"#(label)#";
+	#(id)#.textColor = [UIColor colorWithRed:1.0f green:1.0f blue:1.0f alpha:(float)1.0f];
+	#(id)#.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:(float)1.0f];
+	#(id)#.textAlignment = UITextAlignment#BIG(align)#;
+	#(id)#.font = [UIFont systemFontOfSize:#(fontsize)#.0f];
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+	[self addSubview:#(id)#];
+	[#(id)# release];
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="input">
+  			  <header>
+  				<![CDATA[
+	#(id)# = [[UITextField alloc] initWithFrame:CGRectMake(#(left)#.0f, #(top)#.0f, #(width)#.0f, #(height)#.0f)];
+	[#(id)# setBorderStyle:UITextBorderStyleRoundedRect];
+	#(id)#.returnKeyType = UIReturnKeyDone;
+	#(id)#.clearButtonMode = UITextFieldViewModeWhileEditing;
+	#(id)#.delegate = self;
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+	[self addSubview:#(id)#];
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="button">
+  			  <header>
+  				<![CDATA[
+	#(id)# = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	[#(id)# setFrame:CGRectMake(#(left)#.0f, #(top)#.0f, #(width)#.0f, #(height)#.0f)];
+	[#(id)# setTitle:@"#(label)#" forState:UIControlStateNormal];
+	[#(id)# setTitleColor:[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:(float)1.0f] forState:UIControlStateNormal];
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+	[self addSubview:#(id)#];
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="slider">
+  			  <header>
+  				<![CDATA[
+	#(id)# = [[UISlider alloc] initWithFrame:CGRectMake(#(left)#.0f, #(top)#.0f, #(width)#.0f, #(height)#.0f)];
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[            
+	[self addSubview:#(id)#];
+  				]]>
+  				</footer>
+  			</mapping>
+  		</target>
+		</rule>
+
+  <!-- Rule for appDelegate.m -->
+  <!--
+		<rule template="appDelegate.m">
+		  <target id="UIObjects">
+  			<mapping from="view">
+  			  <header>
+  				<![CDATA[
+  					<b>view header</b>
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					<b>view footer</b>
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="image">
+  			  <header>
+  				<![CDATA[
+  					image header
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					image footer
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="list">
+  			  <header>
+  				<![CDATA[
+  					list header
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					list footer
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="tab">
+  			  <header>
+  				<![CDATA[
+  					<b>tab header</b>
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					<b>tab footer</b>
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="label">
+  			  <header>
+  				<![CDATA[
+  					label header
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					label footer
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="interaction">
+  			  <header>
+  				<![CDATA[
+  					<b>interaction header</b>
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					<b>interaction header</b>
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="input">
+  			  <header>
+  				<![CDATA[
+  					input header
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					input footer
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="button">
+  			  <header>
+  				<![CDATA[
+  					button header
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					button footer
+  				]]>
+  				</footer>
+  			</mapping>
+  			<mapping from="slider">
+  			  <header>
+  				<![CDATA[
+  					slider header
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					slider footer
+  				]]>
+  				</footer>
+  			</mapping>
+  		</target>
+		  <target id="Comment">
+  			<mapping from="view">
+  			  <header>
+  				<![CDATA[
+  					<font color=gray>view comment header</font>
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					<font color=gray>view comment footer</font>
+  				]]>
+  				</footer>
+  			</mapping>
+  		</target>
+		</rule>
+	-->
+	
+  <!-- Rule for appDelegate.h -->
+  <!--
+		<rule template="appDelegate.h">
+		  <target id="Comment">
+  			<mapping from="view">
+  			  <header>
+  				<![CDATA[
+  					<font color=gray>view comment header</font>
+  				]]>
+  				</header>
+  				<footer>
+  				<![CDATA[
+  					<font color=gray>view comment footer</font>
+  				]]>
+  				</footer>
+  			</mapping>
+  		</target>
+		</rule>
+  -->		
+  </rules>
+
+
+<!-- Rules End -->
+
+</zeneration>
+

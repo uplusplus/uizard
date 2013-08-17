@@ -1,0 +1,149 @@
+#yui-gen94 {
+	width:180px;
+	
+}
+#yui-gen94 .bd{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+#yui-gen94 .bd a{
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+#menubutton1-button{
+	font-size: 11px;
+	width:180px;
+}
+.selcthThemeDiv{
+	overflow: auto; 
+	border: 1px solid #ccc;
+	padding: 3px;
+}
+.themeName {
+
+	border-bottom: 1px solid #ccc;
+}
+.selected {
+	font-weight: bolder;
+	background-color: #b3d4ff;
+}
+
+.selectorCSS {
+	display: none;
+	overflow: auto;
+}
+.cssBox div {
+	border-bottom: 1px solid #ccc;
+	overflow: auto;
+	vertical-align: middle;
+}
+#areaBox{
+	width:153px; 
+	height:250px; 
+	float:left; 
+	overflow-y:scroll; 
+	border-right:1px solid #CCC;
+	border-left:1px solid #CCC; 
+	border-bottom:1px solid #CCC;
+	background-color: white;
+}
+
+#areaBox div{
+	padding-top:3px;
+	padding-bottom: 3px;
+	padding-left: 10px;
+	height: 20px;
+	cursor: pointer;
+}
+#cssBoxdefault{
+	width:292px; 
+	height:250px; 
+	float:left; 
+	overflow-y:scroll; 
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+
+	background-color: white;
+}
+
+#cssBoxtop{
+	width:292px; 
+	height:250px; 
+	float:left; 
+	overflow-y:scroll; 
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+
+	background-color: white;
+}
+.topwrap{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+#cssBoxworkspace{
+	width:292px; 
+	height:250px; 
+	float:left; 
+	overflow-y:scroll; 
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+
+	background-color: white;
+}
+.workspacewrap{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	height: 20px;
+	border-bottom: 1px solid #ccc;}
+
+#cssBoxProjectExplorer{
+	width:292px; 
+	height:250px; 
+	float:left; 
+	overflow-y:scroll; 
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+
+	background-color: white;
+}
+.ProjectExplorerwrap{ 
+	padding-top: 3px;
+	padding-bottom: 3px;
+	height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+#cssBoxbottom{
+	width:292px; 
+	height:250px; 
+	float:left; 
+	overflow-y:scroll; 
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+
+	background-color: white;
+}
+.bottomwrap{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	height: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.property {
+	font-size: 11px;
+	
+}
+
+.value {
+	vertical-align: middle;
+	font-size: 11px;
+	margin: 0 auto;
+}
